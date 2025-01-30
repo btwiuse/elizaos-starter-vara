@@ -8,7 +8,7 @@ import {
 } from "@elizaos/core";
 import { bootstrapPlugin } from "@elizaos/plugin-bootstrap";
 import { createNodePlugin } from "@elizaos/plugin-node";
-import { polkadotPlugin } from "@elizacn/plugin-polkadot";
+import { varaPlugin } from "@elizacn/plugin-vara";
 import fs from "fs";
 import net from "net";
 import path from "path";
@@ -58,7 +58,7 @@ export function createAgent(
     plugins: [
       bootstrapPlugin,
       nodePlugin,
-      polkadotPlugin,
+      varaPlugin,
     ].filter(Boolean),
     providers: [],
     actions: [],
