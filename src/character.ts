@@ -2,6 +2,8 @@ import { Character, Clients, defaultCharacter, ModelProviderName } from "@elizao
 
 export const character: Character = {
     ...defaultCharacter,
+    modelProvider: ModelProviderName.OPENAI,
+    modelEndpointOverride: process.env["OPENAI_BASE_URL"] || "https://api.openai.com/v1",
     // name: "Eliza",
     // plugins: [],
     // clients: [],
